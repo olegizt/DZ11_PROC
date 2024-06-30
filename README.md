@@ -19,3 +19,17 @@
 После скачивания скрипта (``` wget https://raw.githubusercontent.com/olegizt/DZ11_PROC/main/my_ps_ax.sh ```) его необходимо сделать исполняемым - ****chmod +x my_ps_ax.sh****
 ### Недостатки
 Медленная, по сравнению с выполнением команды ***ps ax***, работа скрипта и как говорилось ранее - не 100% одинаковый вывод скрипта и ***ps ax***
+
+
+### Отрабатывалось на стенде WSL2 / Ubuntu on Windows 10:
+```
+root@myPC:/home/user# uname -a
+Linux myPC 5.15.153.1-microsoft-standard-WSL2 #1 SMP Fri Mar 29 23:14:13 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+root@myPC:/home/user# cat /etc/lsb-release
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=22.04
+DISTRIB_CODENAME=jammy
+DISTRIB_DESCRIPTION="Ubuntu 22.04.4 LTS"
+S
+```

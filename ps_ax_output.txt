@@ -1,0 +1,50 @@
+root@myPC:/home/user# ps ax
+    PID TTY      STAT   TIME COMMAND
+      1 ?        Ss     5:50 /sbin/init
+      2 ?        Sl     0:00 /init
+      7 ?        Sl     0:00 plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate
+     47 ?        S<s    0:00 /lib/systemd/systemd-journald
+     71 ?        Ss     0:00 /lib/systemd/systemd-udevd
+     82 ?        Ss     0:00 snapfuse /var/lib/snapd/snaps/bare_5.snap /snap/bare/5 -o ro,nodev,allow_other,suid
+     85 ?        Ss     0:00 snapfuse /var/lib/snapd/snaps/core22_1122.snap /snap/core22/1122 -o ro,nodev,allow_other,suid
+     86 ?        Ss     0:01 snapfuse /var/lib/snapd/snaps/core22_1380.snap /snap/core22/1380 -o ro,nodev,allow_other,suid
+     87 ?        Ss     0:00 snapfuse /var/lib/snapd/snaps/gtk-common-themes_1535.snap /snap/gtk-common-themes/1535 -o ro,nodev,allow_other,suid
+     92 ?        Ss     0:00 snapfuse /var/lib/snapd/snaps/snapd_21465.snap /snap/snapd/21465 -o ro,nodev,allow_other,suid
+    101 ?        Ss     0:03 snapfuse /var/lib/snapd/snaps/snapd_21759.snap /snap/snapd/21759 -o ro,nodev,allow_other,suid
+    102 ?        Ss     0:01 snapfuse /var/lib/snapd/snaps/ubuntu-desktop-installer_1286.snap /snap/ubuntu-desktop-installer/1286 -o ro,nodev,allow_other,suid
+    103 ?        Ss     0:00 snapfuse /var/lib/snapd/snaps/ubuntu-desktop-installer_1276.snap /snap/ubuntu-desktop-installer/1276 -o ro,nodev,allow_other,suid
+    113 ?        Ss     0:00 /lib/systemd/systemd-resolved
+    127 ?        Ss     0:00 /usr/sbin/cron -f -P
+    129 ?        S<     0:02 /usr/sbin/atopacctd
+    130 ?        Ss     0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    142 ?        Ss     0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+    147 ?        Ssl    0:00 /usr/sbin/rsyslogd -n -iNONE
+    154 ?        Ssl    0:02 /usr/lib/snapd/snapd
+    159 ?        Ss     0:00 /lib/systemd/systemd-logind
+    209 ?        Ss     0:00 /bin/bash /snap/ubuntu-desktop-installer/1286/bin/subiquity-server
+    241 hvc0     Ss+    0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud console 115200,38400,9600 vt220
+    245 ?        Ssl    0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+    246 tty1     Ss+    0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+    357 ?        Sl     0:24 /snap/ubuntu-desktop-installer/1286/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --storage-version=2 --postinst-hooks-dir=/snap/ubuntu-desktop-installer/1286/etc/subiquity/postinst.d
+    387 ?        Ss     0:00 /init
+    388 ?        S      0:01 /init
+    389 pts/0    Ss     0:00 -bash
+    390 pts/1    Ss     0:00 /bin/login -f
+    448 ?        Ss     0:00 /lib/systemd/systemd --user
+    449 ?        S      0:00 (sd-pam)
+    454 pts/1    S+     0:00 -bash
+    482 ?        S      2:36 python3 /snap/ubuntu-desktop-installer/1286/usr/bin/cloud-init status --wait
+   1123 ?        Ss     0:00 /lib/systemd/systemd --user
+   1124 ?        S      0:00 (sd-pam)
+   1426 pts/0    D+     0:01 sudo -i
+   1427 pts/2    Ss     0:00 sudo -i
+   1428 pts/2    S      0:00 -bash
+  22296 ?        S<Ls   0:02 /usr/bin/atop -R -w /var/log/atop/atop_20240630 600
+  32143 ?        Ssl    0:00 /usr/libexec/packagekitd
+  32148 ?        Ssl    0:00 /usr/libexec/polkitd --no-debug
+  37263 pts/2    S+     0:03 mc
+  37265 pts/3    Ss+    0:00 bash -rcfile .bashrc
+ 108213 pts/2    S+     0:00 /bin/sh /usr/bin/sensible-editor /home/user/ps_ax.sh
+ 108215 pts/2    D+     0:00 /usr/bin/mcedit /home/user/ps_ax.sh
+ 108218 pts/4    Ss     0:00 bash -rcfile .bashrc
+ 113858 pts/4    R+     0:00 ps ax
